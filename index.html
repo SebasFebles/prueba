@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen" class="welcome-screen">
+        <h1>Bienvenido a mi portafolio</h1>
+        <h2>Sebastián Febles</h2>
+        <button onclick="mostrarPortafolio()">Ver portafolio completo</button>
+    </div>
+
+    <!-- Contenido del portafolio (oculto al inicio) -->
+    <div id="portfolio" class="hidden">
+        <div class="container">
+            <h1>Sebastián Jesús Febles Rodríguez - Portafolio Profesional</h1>
+            
+            <img src="foto.jpg" alt="Foto mía" class="profile-image">
+            
+            <h2>Sobre Mí</h2>
+            <p>Mi pasión es el desarrollo web con HTML y el diseño gráfico en Photoshop. Estoy aprendiendo JavaScript y practicando con Python...</p>
+
+            <h2>Experiencia</h2>
+            <ul>
+                <li><strong>Diseñador Gráfico</strong> - Nfinite (1 año de experiencia, actualmente trabajo allí)</li>
+            </ul>
+
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Photoshop - 2 años de experiencia</li>
+                <li>HTML - 1 año y medio de experiencia</li>
+                <li>Python - 3 meses de práctica</li>
+            </ul>
+
+            <a href="Currículum_sebastian_ingles.pdf" class="download-btn" download>Descargar Currículum en Inglés</a>
+            <a href="sebastian_febles.jpg" class="download-btn" download>Descargar CV en Español</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Llamar el JavaScript -->
+</body>
+</html>
