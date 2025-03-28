@@ -29,9 +29,8 @@ let currentHabilidad = 0;
 
 // Mostrar el portafolio al hacer clic en el botón
 function mostrarPortafolio() {
-    console.log("Se presionó el botón para ver el portafolio"); // Depuración
-    document.getElementById("welcome-screen").style.display = "none";  // Ocultar la pantalla de bienvenida
-    document.getElementById("portfolio").style.display = "block";      // Mostrar el portafolio
+    document.getElementById("welcome-screen").style.display = "none";  // Oculta la bienvenida
+    document.getElementById("portfolio").style.display = "block";      // Muestra el portafolio
 }
 
 // Mostrar las secciones correspondientes
