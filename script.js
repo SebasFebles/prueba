@@ -1,27 +1,27 @@
 let habilidades = [
     {
         text: "Responsabilidad y puntualidad",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/responsabilidad.jpg"
+        image: "imagenes/responsabilidad.jpg"
     },
     {
         text: "Planificación y organización",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/organizacion.jpg"
+        image: "imagenes/organizacion.jpg"
     },
     {
         text: "Habilidad lectora y comprensiva",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/leer.jpeg"
+        image: "imagenes/leer.jpeg"
     },
     {
         text: "Buena disposición para aprender y trabajar",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/aprende_trabaja.jpg"
+        image: "imagenes/aprende_trabaja.jpg"
     },
     {
         text: "Aprendo absolutamente rápido",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/aprendo_rapido.jpg"
+        image: "imagenes/aprendo_rapido.jpg"
     },
     {
         text: "Trabajo en equipo perfecto",
-        image: "https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/trabajo_equipo.jpg"
+        image: "imagenes/trabajo_equipo.jpg"
     }
 ];
 
