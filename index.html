@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Pantalla de bienvenida -->
-    <div id="welcome-screen" class="welcome-screen">
+<div id="welcome-screen" class="welcome-screen">
         <h1>Bienvenido a mi portafolio</h1>
         <h2>Sebastián Febles</h2>
         <button onclick="mostrarPortafolio()">Ver mi portafolio</button>
     </div>
+<div id="portfolio" class="hidden">
 
-    <!-- Portafolio con contenido -->
-    <div id="portfolio" class="hidden">
-        <!-- Barra lateral con imagen y botones -->
         <div class="sidebar">
             <img src="https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/foto.JPG" alt="Foto de Sebastián" class="profile-image">
             <div class="header-info">
@@ -25,37 +21,40 @@
                 <p><strong>Sebastián Febles</strong></p>
                 <p><strong>Ve: 26596501</strong></p>
                 <p><strong>+58 4149471188</strong></p>
-                </div>
-
-            <!-- Barra de navegación -->
+            </div>
             <button onclick="showSection('sobreMi')">Sobre mí</button>
             <button onclick="showSection('experiencia')">Experiencia</button>
             <button onclick="showSection('habilidades')">Habilidades Técnicas</button>
         </div>
-
-        <!-- Sección de contenido central -->
-        <div id="content" class="content">
+<div id="content" class="content">
             <div id="sobreMi" class="section">
                 <h2>Sobre Mí</h2>
                 <p>Mi pasion es el photoshop, web, diseño grafico y programacion.</p>
+                <p>pronto sere un profesional en todo! tengo muchas hablidad y falicidad en el uso de computadoras</p>
+                <p>me siento mucho mas como haciendo programas, editando, paginas, cada vez me siento mejor haciendo mi trabajo.</p>
             </div>
             <div id="experiencia" class="section">
                 <h2>Experiencia</h2>
-                <p>Diseñador Gráfico en Nfinite 1 año trabajando para ellos y aun sigo trabajando con esa empresa. me encantaria trabajar en otros sitios!
-                </p>
+                <ul>
+                    <li>Photoshop:</li> <p>2 Años de experiencia </p> <p>1 año de trabajo en Nfinite. No tengo permitido mostrar trabjos mios por un contrato que firme de la empresa.</p>
+                    <li>HTML:</li> <p>1 año y medio usando HTML</p>
+                    <li>JAVASCRIPT:</li> <P>1 año usando script.js</P>
             </div>
+                </ul>
             <div id="habilidades" class="section">
                 <h2>Habilidades Técnicas</h2>
-                <ul>
-                    <li>Photoshop - 2 años de experiencia</li>
-                    <li>HTML - 1 año y medio de experiencia</li>
-                    <li>Python - 1 año de experiencia</li>
-            </div>
+                <p>Responsabilidad y puntualidad.</p>
+                <p>Planificacion y organizació</p>
+                <p>Habilidad lectora y comprensiva</p>
+                <p>buena disposicion para aprender y trabajar</p>
+                <P>Aprendo absolutamente rapido</P>
+                <p>trabajo en equipo perfecto.</p>
+                </div>
             <div id="Mas de mi" class="section">
                         <h2>Mas de mi</h2>
                         <p>Tengo la hablidad de aprender rapido, trabajo bajo presion, trabajo ultimo momento, siempre atento en algun cambio, siempre en comunicacion, trabajo en grupo, tengo destresa y lo mejor de todo! si paso algo, lo resuelvo en el momento! </p>
                     </div>
-                </ul>
+
             </div>
         </div>
     </div>
