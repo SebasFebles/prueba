@@ -135,20 +135,22 @@
 #sobreMi {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Mover el contenido hacia arriba */
+    align-items: center; /* Mantener centrado horizontalmente */
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    text-align: center; /* Centrar el texto */
-    background-color: #007BFF; /* Fondo llamativo */
-    color: white; /* Texto blanco */
-    padding: 20px;
+    text-align: center;
+    background-color: #007BFF; /* Fondo azul */
+    color: white;
+    padding: 10px; /* Reducir espacio interior */
+    margin: 0; /* Eliminar margen adicional */
 }
 
 #sobreMi h2 {
-    font-size: 3rem; /* Texto más grande */
-    margin-bottom: 20px;
-    font-weight: bold; /* Resaltar el título */
+    font-size: 3rem;
+    margin: 10px 0; /* Reducir el espacio inferior */
+    font-weight: bold;
 }
+
 
 #sobreMi p {
     font-size: 1.5rem; /* Agrandar el tamaño del texto */
