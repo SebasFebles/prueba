@@ -19,7 +19,7 @@ header {
 /* Contenido de la barra lateral */
 .sidebar {
     background-color: #f4f4f4;
-    width: 200px;
+    width: 250px;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -47,17 +47,17 @@ header {
 
 /* Contenido principal */
 .content {
-    margin-left: 220px; /* Espacio para la barra lateral */
+    margin-left: 270px; /* Espacio para la barra lateral */
     padding: 20px;
 }
 
 /* Sección de contenido */
 .section {
-    display: none;
+    display: none; /* Ocultar por defecto */
 }
 
 .section.active {
-    display: block;
+    display: block; /* Mostrar solo la sección activa */
 }
 
 /* Estilos de bienvenida */
