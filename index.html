@@ -8,14 +8,14 @@
 </head>
 <body>
 
-    <!-- Pantalla de bienvenida -->
+    <!-- Pantalla de bienvenida (se ve al cargar la página) -->
     <div id="welcome-screen" class="welcome-screen">
         <h1>Bienvenido a mi portafolio</h1>
         <h2>Sebastián Febles</h2>
         <button onclick="mostrarPortafolio()">Ver mi portafolio</button>
     </div>
 
-    <!-- Portafolio con contenido -->
+    <!-- Portafolio con contenido (inicialmente oculto) -->
     <div id="portfolio" class="hidden">
         <div class="sidebar">
             <img src="https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/foto.JPG" alt="Foto de Sebastián" class="profile-image">
@@ -39,8 +39,10 @@
                 <p>Pronto seré un profesional en todo! Tengo muchas habilidades y facilidad en el uso de computadoras.</p>
                 <p>Me siento mucho más cómodo haciendo programas, editando páginas, cada vez me siento mejor haciendo mi trabajo.</p>
             </div>
-
-            <!-- Sección Experiencia -->
+            
+            <!-- Efecto Parallax -->
+            <div class="parallax"></div>
+            
             <div id="experiencia" class="section">
                 <h2>Experiencia</h2>
                 <ul>
@@ -50,28 +52,24 @@
                     <li>JAVASCRIPT: 1 año usando script.js</li>
                 </ul>
             </div>
+            
 
             <!-- Sección Habilidades Técnicas -->
             <div id="habilidades" class="section">
                 <h2>Habilidades Técnicas</h2>
                 <div class="habilidad">
-                    <!-- Círculo negro con título -->
-                    <div class="circle black">
-                        <h2>Habilidades Técnicas</h2>
-                    </div>
+                   
+                </div>
 
-                    <!-- Círculo rojo con habilidad -->
-                    <div class="circle red">
+                    <div>
                         <p id="habilidadText">Responsabilidad y puntualidad</p>
                     </div>
 
-                    <!-- Círculo amarillo con imagen -->
-                    <div class="circle yellow">
+                    <div>
                         <img id="habilidadImage" src="https://raw.githubusercontent.com/SebasFebles/prueba/main/imagenes/responsabilidad.jpg" alt="Responsabilidad y puntualidad">
                     </div>
 
-                    <!-- Círculo verde con botón Next -->
-                    <div class="circle green">
+                    <div>
                         <button id="nextButton" onclick="nextHabilidad()">Next</button>
                     </div>
                 </div>

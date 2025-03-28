@@ -1,72 +1,129 @@
-/* Estilo básico para los círculos */
-.circle {
-    display: inline-block;
+/* Estilos de la pantalla de bienvenida */
+#welcome-screen {
     text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 50%;
+    background-color: #007BFF;  /* Color de fondo azul */
+    color: white;  /* Texto blanco */
+    padding: 50px;
+    height: 100vh;  /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Círculo negro */
-.circle.black {
-    background-color: black;
-    color: white;
-    width: 200px;
-    height: 200px;
+#welcome-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-/* Círculo rojo */
-.circle.red {
-    background-color: red;
-    color: white;
-    width: 200px;
-    height: 200px;
+#welcome-screen h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
-/* Círculo amarillo */
-.circle.yellow {
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-}
-
-/* Círculo verde */
-.circle.green {
-    background-color: green;
-    color: white;
-    width: 200px;
-    height: 200px;
-}
-
-.circle img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-button {
-    padding: 10px;
+#welcome-screen button {
+    padding: 12px 24px;
+    font-size: 1.5rem;
     background-color: white;
-    border-radius: 5px;
-    font-size: 1.1rem;
+    color: #007BFF;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Nueva sombra */
+    transition: transform 0.3s ease; /* Nueva transición */
 }
 
-button:hover {
+#welcome-screen button:hover {
     background-color: #f1f1f1;
+    transform: scale(1.05); /* Nueva transformación */
 }
 
-/* Sección de contenido */
+
+/* Estilo para el portafolio */
+#portfolio {
+    display: none; /* Inicialmente oculto */
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #f4f4f4;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+/* Aumentar el tamaño y centrar el texto de "Habilidades Técnicas" */
+.sidebar .header-info h1 {
+    font-size: 2.5rem; /* Aumentamos el tamaño */
+    text-align: center; /* Centramos el texto */
+    margin-bottom: 20px; /* Espacio abajo */
+    font-weight: bold; /* Resaltamos el texto */
+}
+
+/* Contenido principal */
 .content {
     margin-left: 270px; /* Espacio para la barra lateral */
     padding: 20px;
 }
 
-/* Sección activa */
-.section.active {
-    display: block;
+/* Sección de contenido */
+.section {
+    display: none; /* Ocultar por defecto */
 }
 
-.hidden {
-    display: none;
+/* Sección de contenido */
+.section {
+    display: none; /* Ocultar por defecto */
+    opacity: 0; /* Aseguramos que esté invisible por defecto */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para opacidad */
+}
+
+.section.active {
+    display: block; /* Mostrar solo la sección activa */
+    animation: fadeIn 1s ease-in-out; /* Aplicar la animación */
+    opacity: 1; /* Hacerlo completamente visible */
+}
+
+
+/* Animación para el efecto de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Efecto Parallax */
+.parallax {
+    background-image: url('imagenes/fondo.jpg'); /* Cambia a tu imagen preferida */
+    min-height: 500px; /* Altura mínima del efecto */
+    background-attachment: fixed; /* Fijar la imagen al fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Asegurar que la imagen cubra todo el contenedor */
 }
