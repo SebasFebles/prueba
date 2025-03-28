@@ -1,88 +1,72 @@
-/* Barra azul superior */
-header {
-    background-color: #007BFF;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Estilo básico para los círculos */
+.circle {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
     padding: 20px;
-}
-
-/* Estilo de la imagen de perfil */
-.profile-image {
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-/* Contenido de la barra lateral */
-.sidebar {
-    background-color: #f4f4f4;
-    width: 250px;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.sidebar button {
-    background-color: #007BFF;
+/* Círculo negro */
+.circle.black {
+    background-color: black;
     color: white;
+    width: 200px;
+    height: 200px;
+}
+
+/* Círculo rojo */
+.circle.red {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+/* Círculo amarillo */
+.circle.yellow {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+/* Círculo verde */
+.circle.green {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.circle img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+button {
     padding: 10px;
-    margin: 10px 0;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1rem;
+    background-color: white;
     border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.sidebar button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #f1f1f1;
 }
 
-/* Contenido principal */
+/* Sección de contenido */
 .content {
     margin-left: 270px; /* Espacio para la barra lateral */
     padding: 20px;
 }
 
-/* Sección de contenido */
-.section {
-    display: none; /* Ocultar por defecto */
-}
-
+/* Sección activa */
 .section.active {
-    display: block; /* Mostrar solo la sección activa */
+    display: block;
 }
 
-/* Estilos de bienvenida */
-#welcome-screen {
-    text-align: center;
-    background-color: #007BFF;
-    padding: 50px;
-    color: white;
-}
-
-#welcome-screen button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: white;
-    color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#welcome-screen button:hover {
-    background-color: #f1f1f1;
-}
-
-/* Mostrar información de portafolio */
-#portfolio {
+.hidden {
     display: none;
 }
