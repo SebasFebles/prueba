@@ -1,10 +1,10 @@
-/* Estilos de la pantalla de bienvenida */
 #welcome-screen {
     text-align: center;
     background-color: #007BFF;  /* Color de fondo azul */
     color: white;  /* Texto blanco */
-    padding: 50px;
-    height: 100vh;  /* Ocupa toda la pantalla */
+    padding: 0; /* Reducir todo el espacio interior */
+    height: 100vh; /* Ocupa toda la pantalla */
+    margin: 0; /* Eliminar espacio exterior */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,15 +135,16 @@
 #sobreMi {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Mover el contenido hacia arriba */
+    justify-content: flex-start; /* Mover todo hacia arriba */
     align-items: center; /* Mantener centrado horizontalmente */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    text-align: center;
-    background-color: #007BFF; /* Fondo azul */
+    height: 100vh; /* Ocupa toda la pantalla */
+    text-align: center; 
+    background-color: #007BFF; 
     color: white;
-    padding: 10px; /* Reducir espacio interior */
-    margin: 0; /* Eliminar margen adicional */
+    padding: 0; /* Reducir el espacio interior */
+    margin: 0; /* Eliminar márgenes exteriores */
 }
+
 
 #sobreMi h2 {
     font-size: 3rem;
