@@ -1,4 +1,4 @@
-// Función para mostrar el portafolio
+// Mostrar el portafolio al hacer clic en el botón
 function mostrarPortafolio() {
     document.getElementById("welcome-screen").style.display = "none";  // Oculta la bienvenida
     document.getElementById("portfolio").style.display = "block";      // Muestra el portafolio
