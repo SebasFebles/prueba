@@ -86,8 +86,3 @@ header {
 #portfolio {
     display: none;
 }
-
-/* Botones de sección activa */
-button.active {
-    background-color: #0056b3;
-}
