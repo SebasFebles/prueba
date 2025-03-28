@@ -119,6 +119,10 @@
     }
 }
 /* Efecto Parallax */
+.section {
+    margin: 20px 0;
+}
+
 .parallax {
     background-image: url('imagenes/fondo.jpg'); /* Cambia a tu imagen preferida */
     min-height: 500px; /* Altura mínima del efecto */
@@ -126,4 +130,29 @@
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* No repetir la imagen */
     background-size: cover; /* Asegurar que la imagen cubra todo el contenedor */
+}
+/* Estilo para centrar y resaltar el texto en "Sobre Mí" */
+#sobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center; /* Centrar el texto */
+    background-color: #007BFF; /* Fondo llamativo */
+    color: white; /* Texto blanco */
+    padding: 20px;
+}
+
+#sobreMi h2 {
+    font-size: 3rem; /* Texto más grande */
+    margin-bottom: 20px;
+    font-weight: bold; /* Resaltar el título */
+}
+
+#sobreMi p {
+    font-size: 1.5rem; /* Agrandar el tamaño del texto */
+    max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+    line-height: 1.8; /* Espaciado entre líneas */
+    margin: 10px 0;
 }
